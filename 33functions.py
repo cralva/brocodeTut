@@ -72,7 +72,7 @@ def divide(x, y):
     z = x / y
     return z
 
-print(add(10, 5)) # we have to turn it into an object before using the return function. without the return then we wouldnt be getting anything from it
+print(add(10, 5)) # we need to tell python what to do with the function so thats why we add the print()function to it. if we dont add the print() then nothing would happen
 print(subtract(8, 2)) #imagine that when we're calling the function it beceomes the return value for each of these
 print(multiply(20, 10))
 print(divide(30, 3))
