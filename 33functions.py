@@ -51,8 +51,11 @@ def display_invoice(name, date, amount):
     print(f'---${amount}---')
 
 display_invoice("cristian alvarez", "7/8/2025", 5500)
+display_invoice("syd alvarez", "07/20/2025", 10000)
+display_invoice("ted alvarez", "08/20/2025", 25000)
+display_invoice("bella alvarez", "09/25/2025", 100000)
 
-# return = statement used to end a functoin and send a result back to the caller
+# return = statement used to end a function and send a result back to the caller
 def add(x, y):
     z = x + y
     return z
