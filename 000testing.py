@@ -13,6 +13,10 @@ print(message) #will print 'None' since the function has to return statement
 
 def add(x, y):
     z = x + y
+    print(z)
+
+first = add(10,15)
+print(first)
 
 print(add(10,5)) #will print none since we dont have a return function
 
