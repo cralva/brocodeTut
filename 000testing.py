@@ -15,8 +15,8 @@ def add(x, y):
     z = x + y
     print(z)
 
-first = add(10,15)
-print(first)
+first = add(10,15) #will print 25 since the function is being called
+print(first) #will print none because there is no return function
 
 print(add(10,5)) #will print none since we dont have a return function
 
