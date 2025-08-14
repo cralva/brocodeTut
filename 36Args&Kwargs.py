@@ -4,24 +4,30 @@
 #                 1. positional 2. default 3. keyword 4. ARBITRARY
 
 
-def add(a, b):
+def add_first(a, b):
     return a + b
 
-print(add(1, 2,)) #will work
+print(add_first(1, 2,)) #will work
 # print(add(1, 2, 5)) #won't work because our function only has two parameters. we need to add another parameter
 
-def add(*args): #this is so there is no set limit on the amount of parameters that we have
+
+
+def add_second(*args): #this is so there is no set limit on the amount of parameters that we have
     print(type(args))
 
-add(1, 2, 5) #we get tuple because that is what we are calling for in the line above
+add_second(1, 2, 5) #we get tuple because that is what we are calling for in the line above
 
-def add(*args): #the 'args' can be any name. it won't affect the function. the only thing that is necessary is the *
+
+
+def add_third(*args): #the 'args' can be any name. it won't affect the function. the only thing that is necessary is the *
     total = 0
     for arg in args:
         total += arg
     return total
 
-print(add(1, 2, 3, 4,))
+print(add_third(1, 2, 3, 4,))
+
+
 
 def display_name(*args):
     for arg in args:
@@ -29,6 +35,9 @@ def display_name(*args):
 
 display_name("Sir", "Cris", "Alvarez")
 print()
+
+
+
 ##kwargs
 
 def print_address(**kwargs):
