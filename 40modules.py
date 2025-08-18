@@ -12,14 +12,14 @@ import math as m #another way of importing a module. instead of using the name o
 print(m.pi)
 
 
-#create our own module. create new file
+#create our own module. create new file and import it. then use the functions/variables from that file
 
 import exfor40
 
-result = exfor40.pi
+result = exfor40.pi #using a variable
 print(result)
 
-squared_ex = exfor40.square(3)
+squared_ex = exfor40.square(3) #using functions
 print(squared_ex)
 
 cubed_ex = exfor40.cube(3)
