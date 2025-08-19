@@ -60,6 +60,9 @@ from math import e
 def func1():
     print(e)
 
-e = 3
+e = 3 #delete this then 2.718 would print since its a built in variable but since we added a global variable, e = 3 this takes priority over built ins
 
 func1()
+
+
+#it a proiority list. local beats all of them, then comes enclosed, then global, and then built-in
